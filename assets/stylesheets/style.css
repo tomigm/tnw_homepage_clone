@@ -58,6 +58,8 @@ nav > .sticky > ul > *:hover {
 
 nav > ul.responsiveNav {
     display: none;
+    z-index: 1;
+    background-color: white;
 }
 
 nav div ul{
@@ -71,13 +73,13 @@ padding: 0.5rem;
 
 .stickyScroll {
     position: fixed;
-    top: 0;
+    top: 0px;
     width: 100%;
     background-color: white;
     border: 1px solid rgb(231, 231, 231);
     -webkit-box-shadow: 0px 50px 23px -16px rgba(0,0,0,0.14); 
     box-shadow: 0px 50px 23px -16px rgba(0,0,0,0.14);
-    transform: translateZ(999);
+    z-index:1;
   }
 
 /*NAV END*/
@@ -240,7 +242,7 @@ align-self: center;
 
 aside.ad > div.adtxt  {
     display: flex;
-    padding: 1em;
+    padding: 0 1em;
 
     justify-content: center;
     flex-direction: column;
@@ -248,8 +250,8 @@ aside.ad > div.adtxt  {
 
 aside.ad > div.adtxt > h1 {
     font-weight: bold;
-    font-size: 2rem;
-    padding: 0em 1em;
+    font-size: 1rem;
+    padding: 0em;
     color: #d6bdcd;
     
 }
@@ -770,8 +772,12 @@ section.top-news {
     width: 100%;
 }
 
+section.top-news > .big > h1 {
+    font-size: 2rem;
+}
+
 .big,.side1, .side2 {
-    min-height: 30vh;
+    min-height: 50vh;
     width: 100%;
 }
 
@@ -887,3 +893,9 @@ footer > .legal {
    font-size: 0.7rem;
     text-align: center;
 }
+
+
+
+  nav {
+      z-index: 1;
+  }
